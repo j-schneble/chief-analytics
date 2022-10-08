@@ -1,0 +1,424 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "sfpro";
+  src: url('../components/fonts/SF-Pro/SF-Pro.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sfprodisplayregular";
+  src: url('../components/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sfprodisplaybold";
+  src: url('../components/fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF-Pro-Display-Light";
+  src: url('../components/fonts/SF-Pro-Display/SF-Pro-Display-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF-Pro-Text-Regular";
+  src: url('../components/fonts/SF-Pro-Text/SF-Pro-Text-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF-Pro-Display-Heavy";
+  src: url('../components/fonts/SF-Pro-Display/SF-Pro-Display-Heavy.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 400 900;
+    font-display: swap;
+    src: url('https://assets.vercel.com/raw/upload/v1587415301/fonts/2/inter-var-latin.woff2')
+      format('woff2');
+  }
+
+  .capsize::before {
+    content: '';
+    margin-bottom: -0.098em;
+    display: table;
+  }
+
+  .capsize::after {
+    content: '';
+    margin-top: -0.219em;
+    display: table;
+  }
+
+  pre::-webkit-scrollbar {
+    display: none;
+  }
+
+  pre {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* https://seek-oss.github.io/capsize/ */
+  .capsize::before {
+    content: '';
+    margin-bottom: -0.098em;
+    display: table;
+  }
+
+  .capsize::after {
+    content: '';
+    margin-top: -0.219em;
+    display: table;
+  }
+
+  ::-moz-selection {
+    color: #fff;
+    background: #000;
+  }
+
+  .light ::selection {
+    color: #fff;
+    background: #000;
+  }
+
+  .dark ::selection {
+    background: #fff;
+    color: #000;
+  }
+
+  html {
+    @apply max-h-screen antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply p-0 m-0 font-sans ;
+  }
+
+  body:after {
+    content: '';
+    position: fixed;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    z-index: -1;
+    @apply bg-white dark:bg-white;
+  }
+}
+
+@layer components {
+  /* needed to override tailwind forms styles */
+  select {
+    @apply w-full px-4 py-2 border border-gray-200 rounded outline-none text-primary bg-gray-1000 bg-opacity-5 hover:bg-opacity-10 focus:border-gray-1000 focus:outline-none focus:ring-0 dark:border-gray-800 dark:bg-white dark:focus:border-gray-600;
+  }
+
+  button:focus,
+  a:focus {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-white dark:ring-blue-500 dark:ring-offset-black;
+  }
+
+  button:active:not(:focus-visible),
+  a:active:not(:focus-visible),
+  button:focus:not(:focus-visible),
+  a:focus:not(:focus-visible) {
+    @apply outline-none ring-0 ring-offset-0;
+  }
+
+  /* input[type='text'],
+  textarea {
+    @apply bg-white border border-gray-200 outline-none dark:border-gray-700 dark:bg-gray-800;
+  } */
+
+  input[type='checkbox'] {
+    @apply dark:border-gray-600 dark:bg-gray-700;
+  }
+
+  /* input:focus,
+  textarea:focus {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-white dark:ring-offset-black;
+  } */
+
+  .font-list-heading {
+    @apply font-sans text-lg font-bold text-primary;
+  }
+
+  .tabbed-navigation::-webkit-scrollbar {
+    display: none;
+  }
+
+  .light .bg-dots {
+    background: linear-gradient(90deg, #f9fafb 15px, transparent 1%) center,
+      linear-gradient(#f9fafb 15px, transparent 1%) center, rgba(0, 0, 0, 0.24);
+    background-size: 16px 16px;
+  }
+
+  .dark .bg-dots {
+    background: linear-gradient(90deg, #050505 15px, transparent 1%) center,
+      linear-gradient(#050505 15px, transparent 1%) center,
+      rgba(255, 255, 255, 0.12);
+    background-size: 16px 16px;
+  }
+}
+
+/* Your own custom utilities */
+@layer utilities {
+  .text-primary {
+    @apply text-gray-1000 dark:text-gray-100;
+  }
+
+  .text-secondary {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+
+  .text-tertiary {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+
+  .text-quaternary {
+    @apply text-gray-400 dark:text-gray-500;
+  }
+
+  .bg-elevated {
+    @apply bg-gray-400 bg-opacity-5 dark:bg-gray-50;
+  }
+  @supports (backdrop-filter: saturate(180%) blur(25px)) {
+    .bg-primary {
+      @apply   bg-gray-100/60 dark:bg-gray-1000/70;
+    }
+    .filter-blur {
+      backdrop-filter: saturate(110%) blur(15px);
+    }
+  }
+  @supports not (backdrop-filter: saturate(180%) blur(25px)) {
+    .bg-primary {
+      @apply bg-gray-100 dark:bg-gray-1000;
+    }
+  }
+
+  .highlight {
+    @apply bg-black/10 text-orange-500 dark:bg-white/[.06];
+  }
+
+  .button-primary-x {
+    @apply flex items-center justify-center flex-none px-4 py-2 space-x-2 text-sm font-semibold leading-none text-gray-700 transition-all bg-white border border-gray-400 rounded-md shadow-sm cursor-pointer dark:text-gray-300 hover:text-gray-1000 dark:bg-gray-900 border-opacity-30 dark:border-opacity-30 dark:border-gray-500 dark:hover:text-white hover:border-opacity-50 dark:hover:border-opacity-50 hover:shadow-sm;
+  }
+
+  .button-primary-y {
+    @apply flex items-center justify-center flex-none font-semibold leading-none text-gray-900 rounded shadow-sm cursor-pointer dark:text-gray-50 hover:text-gray-1000 dark:bg-zinc-900 dark:hover:text-white dark:hover:border-opacity-50 ;
+   
+
+
+  }
+
+  .dark .bg-stickyy {
+   /* fallback for old browsers */
+ @apply bg-transparent 
+
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     /* Just adjust the color or opacity to make the text pop! */
+    
+   
+  }
+
+  .light .bg-stickyy {
+    filter: drop-shadow(1px 1px 1px #a5b4fc);
+    background-color: rgb(152 151 151 / 45%); /* Just adjust the color or opacity to make the text pop! */
+    box-shadow: inset 0 0 0 200px rgb(255 255 255 / 10%);
+    border: 1px solid rgba(84, 84, 84, 0.05);
+  
+}
+  .filter-none {
+    filter: none;
+  }
+
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+
+  .filter-saturate {
+    -webkit-filter: brightness(105%) saturate(200%) contrast(1);
+    filter: brightness(105%) saturate(200%) contrast(1);
+  }
+
+  .highlight-link-hover {
+    @apply -mx-0.5 rounded-sm bg-opacity-20 px-0.5 text-gray-1000 no-underline dark:bg-opacity-100 dark:text-gray-300 md:hover:bg-yellow-400 md:hover:bg-opacity-30 md:dark:hover:bg-yellow-500 md:dark:hover:bg-opacity-100 md:dark:hover:text-gray-1000;
+  }
+
+  .highlight-link {
+    @apply -mx-0.5 bg-opacity-20 px-0.5 text-gray-1000 dark:bg-gray-100 dark:bg-opacity-20 dark:text-gray-300 md:hover:bg-opacity-30 md:dark:hover:bg-yellow-500 md:dark:hover:bg-opacity-100 md:dark:hover:text-gray-1000;
+  }
+
+  .blink {
+    animation: blink-animation 1.5s steps(2, start) infinite;
+    -webkit-animation: blink-animation 1.5s steps(2, start) infinite;
+  }
+
+}
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+.card {
+  transform: translate(0%, -60%);
+
+
+
+
+}
+
+
+ 
+
+.shad {
+  box-shadow: rgba(165, 180, 252, 0.4) 0px 5px, rgba(165, 180, 252, 0.3) 0px 10px, rgba(255, 255, 255, 0.2) 0px 15px, rgba(165, 180, 252, 0.1) 0px 20px, rgba(165, 180, 252, 0.05) 0px 25px;
+}
+
+
+
+.shad2 {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .15),
+  0 1px 0 rgba(255, 255, 255, 0.25),
+  0 1px 0 rgba(255, 255, 255, 0.25) inset,
+  0 0 0 rgba(0, 0, 0, 0.5) inset;
+  border: 1px solid #ffffffb8;
+  backdrop-filter:
+  blur(15px);
+  text-align: center;
+  background: linear-gradient(
+    120deg,
+    rgba(57, 57, 57, 0.35),
+    rgba(41, 41, 41, 0.45),
+    rgba(57, 57, 57, 0.45)
+  );
+}
+
+
+.shadd {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.popup {
+  content:'';
+ 
+ 
+  border-radius: 8px;
+  background-color: rgba(213, 213, 213, 0.1);
+  backdrop-filter: blur(18px);
+ 
+ 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.18)
+}
+
+
+.zoomA {
+  /* (A) OPTIONAL DIMENSIONS */
+  width: 600px;
+  height: auto;
+ 
+  /* (B) ANIMATE ZOOM */
+  /* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.3s;
+}
+@media (max-width: 671px) {
+	.zoomA {
+		transition: none;
+	}
+}
+ 
+/* (C) ZOOM ON HOVER */
+.zoomA:hover { transform: scale(1.5); }
+
+@media (max-width: 671px) {
+  .zoomA:hover { transform: none;}
+}
+@media (max-width: 671px) {
+  .Tilt {
+     transform: none;
+     transition: none;
+    
+  }
+}
+@media (max-width: 671px) {
+  react-parallax-tilt {
+     display:none;
+   
+     
+  }
+}
+
+@media (max-width: 671px) {
+  .mob-w {
+    margin-right: 11px;
+  }
+}
+
+
+@media (max-width: 671px) {
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(2);
+  cursor: zoom-out
+}
+}
+
+@media (max-width: 671px) {
+  .smsize {
+    margin-right: 4px;
+  }
+}
+
+.projbtn:hover {
+  opacity: 50%;
+
+}
+.macshad {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
