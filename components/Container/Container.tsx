@@ -41,8 +41,8 @@ export default function Container({
   projectsNav = '',
   showNav = true,
   children,
-  title = 'Prime Services.',
-  description = 'Prime Services.',
+  title = 'Chief Analytics.',
+  description = 'Chief Analytics',
   image = '',
   date,
   ...props
@@ -78,7 +78,7 @@ export default function Container({
          
           <meta name='robots' content='follow, index' />
           <meta property='og:type' content={meta.type} />
-          <meta property='og:site_name' content='Prime Services' />
+          <meta property='og:site_name' content='Chief Analytics' />
           <meta property='og:description' content={meta.description} />
           <meta name='ogdescription' content={meta.description} />
           <meta name='og:image' content={meta.image} />
