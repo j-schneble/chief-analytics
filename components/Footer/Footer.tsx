@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
               
                 
               >
-                © {new Date().getFullYear()} Prime Services {" "}
+                © {new Date().getFullYear()} Chief Analytics {" "}
               </p>
         </div>
       </footer>
