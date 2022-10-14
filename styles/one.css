@@ -70,7 +70,6 @@
   .prose hr {
     @apply border-gray-200 dark:border-gray-800;
   }
-  
   .prose h1,
   .prose h2,
   .prose h3,
@@ -80,7 +79,6 @@
     @apply font-sans font-bold text-gray-900 dark:text-gray-100;
     scroll-margin-top: 4rem;
   }
-  
   .prose h1 a,
   .prose h2 a,
   .prose h3 a,
@@ -182,8 +180,6 @@
     margin-top: 1.25em !important;
     margin-bottom: 1.25em !important;
   }
-  
-  
   
   pre::-webkit-scrollbar {
     display: none;
@@ -358,7 +354,6 @@ background: linear-gradient(to bottom, #282929, #1e1f1f); /* W3C, IE 10+/ Edge, 
   }
 
   .x{
-    
     transform:scale(1.2);
   }
   
@@ -419,7 +414,7 @@ background: linear-gradient(to bottom, #2b2a2a, #000000); /* W3C, IE 10+/ Edge, 
 /* Contact Page Mobile */
 
 .contactname{
-  background: linear-gradient(170deg, rgb(53, 53, 54) 0.00%, rgb(36, 37, 38) 100.00%);
+  background:linear-gradient(to top, #2b2a2a, #000000);
   border-radius: 2px;
 }
 @media screen and (max-width: 700px) {
@@ -662,14 +657,11 @@ border-radius:99999px;
 }
 
 .galbtn:hover, .galbtn-main:focus {
-	
 	cursor: pointer;
 	color:#00000080;
-
 }
 
 .conbutton:hover, .conbutton-main:focus {
-
   
 }
 
@@ -689,7 +681,6 @@ border-radius:99999px;
 
 
 .buttonup {
-
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
@@ -709,12 +700,11 @@ border-radius:99999px;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.9);
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+ 
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
   z-index: 30;
-
 }
 .overlayup:target {
   visibility: visible;
@@ -726,10 +716,10 @@ border-radius:99999px;
   padding: 2x;
   z-index: 50;
   overflow-x: hidden;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9);
+  
   border: 1px solid black;
   background: transparent;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  
   border-radius: 5px;
   border-bottom-width: 1px;
   border-color: rgb(5 5 5 / 0.1);
@@ -738,7 +728,6 @@ border-radius:99999px;
   height: 36rem;
   position: relative;
   backdrop-filter: blur(30px);
-
 }
 .popupup .edge {
 

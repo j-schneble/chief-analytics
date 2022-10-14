@@ -1,10 +1,8 @@
 import Container from '../components/Container/index'
 import type { NextPage } from 'next'
 import NextLink from 'next/link'
-
 import Image from 'next/image'
 import useInView from 'react-cool-inview'
-
 import {
   Box,
   FormControl,
@@ -111,9 +109,9 @@ import emailjs from '@emailjs/browser';
         </div>
 
         <Box className='mt-1 '> 
-          <div className='grid items-center grid-cols-2 gap-4 p-3 text-center place-content-evenly homecallgc item-center place-items-evenly'>
-          <div className="items-center justify-center text-center rounded-lg centered-label dark:hover:border-opacity-50 galbtn ring-1 ring-black/10 bg-primary filter-blur ">
-	<a className="flex items-center gap-4 p-2 text-xl font-light text-center text-zinc-300 font-sfprodisplayregular " href="#popup1"><span className='text-xl text-white dark:hover:text-opacity-75'> Book Your Free Demo</span><p className='text-white dark:hover:text-opacity-75'><HiChartSquareBar className='dark:hover:text-opacity-75' color='white' size={25} /></p></a>
+          <div className='grid items-center grid-cols-1 gap-4 p-3 text-center place-content-evenly homecallgc item-center place-items-evenly'>
+          <div className="grid items-center grid-rows-1 gap-1 pb-1 mt-4 mb-4 text-center place-content-evenly ">
+	<a className="flex items-center gap-4 p-2 text-xl font-bold text-center bg-white rounded-sm ring-1 ring-white text-zinc-800 font-sfprodisplaybold " href="#popup1"><span className='text-xl text-black thefirst dark:hover:text-opacity-75'> Book Your Free Demo</span><p className='text-white dark:hover:text-opacity-75'><HiChartSquareBar className='dark:hover:text-opacity-75' color='black' size={25} /></p></a>
 </div>
 
 <div id="popup1" className='overlayup'>   
@@ -123,94 +121,70 @@ import emailjs from '@emailjs/browser';
                 'ring-1 ring-black/10 ',
                 'flex flex-col overflow-auto max-h-[32vh]'">
   <div className="edge"> </div>
-  <div className='grid grid-rows-1 gap-1 pt-1 pl-1 '>
-  <Image
-                          layout='fixed'
-                         width='48px'
-                         height='51px'
-                          className=''
-                           
-                            src="/images/ch.png"
-                          alt='prime'
-                           
-                        />
-          </div>
-          <div className='pt-2 '>
+
+          <div className='pt-6 '>
           <div className=''>
-
-         
-
           <div className='grid items-center grid-cols-1 gap-2 mb-2 text-center place-content-evenly contmobgroup place-items-evenly'>
 
-<h1 className='text-lg text-white/90 contmobphrase font-sfprodisplayregular'>
+<h1 className='mt-6 mb-12 text-xl font-semibold text-white contmobphrase font-sfprodisplaysemibold'>
 Schedule Your Free Demo Report Today
 </h1>
-
-
-
 </div>
-<div className='grid items-center grid-cols-2 gap-4 p-3 text-center place-content-evenly homecallgc item-center place-items-evenly'>
-<div className='p-2 rounded-lg galbtn homecallgc2 ring-1 ring-black/10 bg-primary dark:hover:border-opacity-75 filter-blur'>
-                    <Link href='gallery' className='p-3 text-xl font-light tracking-wider text-white dark:hover:text-opacity-75 -z-10 font-sfprodisplayregular'>
-                   View Gallery ⮕ 
-                    </Link>
-                  </div>
 
 
 
 
-<FormControl   >
+
+
+<FormControl className='px-6'  >
             <div className='grid grid-cols-1 gap-2 '>
               <Box >
-                 <FormLabel className='mb-1 ml-1 text-lg font-medium text-white/90 font-sfprodisplayregular' key={'name'}>Full Name </FormLabel>
+                 <FormLabel className='mb-1 ml-1 text-lg font-medium text-white/90 font-sfprodisplayregular' key={'name'}> </FormLabel>
                   <Input 
-                    className='w-full py-2 pl-1 text-gray-100 bg-gray-700 rounded-sm shadow-xs contactname'
+                    className='w-full py-3 pl-2 text-gray-100 bg-transparent rounded-sm shadow-xs contactname'
                     id='name'
                     type={'name'}
                     value={name}
-                    placeholder="Your Name"
+                    placeholder="Your Full Name"
                     onChange={event => setName(event.currentTarget.value)}
                   />
               </Box>
             <Box>
-                <FormLabel className='mb-1 ml-1 text-lg font-medium text-white/90 font-sfprodisplayregular'  key={'email'}>Email</FormLabel>
+                <FormLabel className='mt-4 mb-1 ml-1 text-lg font-medium text-white/90 font-sfprodisplayregular'  key={'email'}></FormLabel>
                   <Input 
-                    className='w-full py-2 pl-1 rounded-sm shadow-xs contactname '
+                    className='w-full py-3 pl-2 rounded-sm shadow-xs contactname '
                     id='email'
                     type={'email'}
                     value={email}
-                    placeholder='Your Email'
+                    placeholder='Email Address'
                     onChange={event => setEmail(event.currentTarget.value)}            
                   />
               </Box>
             </div>
-          </FormControl>
-
-          <FormControl className='mt-4 ' >
-          <FormLabel className='mb-1 ml-1 text-lg font-medium text-white/90 font-sfprodisplayregular'  key={'meetingdate1'}>Preferred Meeting Date: Option 1</FormLabel>
+      
+          <FormLabel className='mt-8 mb-1 ml-1 text-lg font-medium text-white/90 font-sfprodisplayregular'  key={'meetingdate1'}></FormLabel>
                   <Input 
-                    className='w-full py-2 pl-1 rounded-sm shadow-xs contactname '
+                    className='w-full py-3 pl-2 rounded-sm shadow-xs contactname '
                     id='meetingdate1'
                     type={'meetingdate1'}
                     value={email}
-                    placeholder='Your Email'
+                    placeholder='Preferred Meeting Date: Option 1'
                     onChange={event => setMeetingDate1(event.currentTarget.value)}            
                   />
-          </FormControl>
-          <FormControl className='mt-4 ' >
-          <FormLabel className='mb-1 ml-1 text-lg font-medium text-white/90 font-sfprodisplayregular'  key={'meetingdate2'}>Preferred Meeting Date: Option 2</FormLabel>
+        
+       
+          <FormLabel className='mt-8 mb-1 ml-1 text-lg font-medium text-white/90 font-sfprodisplayregular'  key={'meetingdate2'}></FormLabel>
                   <Input 
-                    className='w-full py-2 pl-1 rounded-sm shadow-xs contactname '
+                    className='w-full py-3 pl-2 mb-6 rounded-sm shadow-xs contactname '
                     id='meetingdate2'
                     type={'meetingdate2'}
                     value={email}
-                    placeholder='Your Email'
+                    placeholder='Preferred Meeting Date: Option 2'
                     onChange={event => setMeetingDate2(event.currentTarget.value)}            
                   />
-          </FormControl>
-          <FormControl className='mt-4'>
+       
             <Button 
-              className='w-full px-2 py-2 mt-5 bg-orange-500 hover:bg-opacity-50'
+              className='w-full px-2 py-2 mt-12 bg-amber-500 hover:bg-opacity-50'
               marginLeft={'1'}
               marginRight={'1'}
               variant="solid"
@@ -224,16 +198,14 @@ Schedule Your Free Demo Report Today
                 </p>
               </Button>
           </FormControl>
+       
          
-</div>
 
-
-
-  
 
 		<a className="closeup" href="#">&times;</a>
     </div>
 		</div>
+   
 	</div>
 </div>
                 
@@ -263,8 +235,7 @@ Schedule Your Free Demo Report Today
              objectFit='cover'
              layout='responsive'
               width="79.375rem"
-              height="48.313rem"
-           
+              height="48.313rem"        
              className='rounded-t-md'
              alt='Summary image'
            />
