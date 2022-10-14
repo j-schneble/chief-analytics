@@ -11,7 +11,7 @@ export default function Document() {
           type='font/woff2'
           crossOrigin='anonymous'
         /> */}
-        <link href='/images/primebtn.png' rel='shortcut icon' />
+        <link href='/images/ch.png' rel='shortcut icon' />
         <link href='/static/favicons/site.webmanifest' rel='manifest' />
         {/* <link
           rel='preconnect'
