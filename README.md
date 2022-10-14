@@ -7,6 +7,8 @@
 ## Current - To Do
 - Finish layout configuration 
 - Decided on Google Data Studio login ( from site or click to leave )
+- Popup for scheduling demo 
+  - Need calendar dates on click for date option 1 + 2
 - Mobile 
 
 ## Stack
