@@ -260,12 +260,7 @@ Schedule Your Free Demo Report Today
           </div>
        
          <div className='grid items-center grid-rows-1 gap-1 pb-1 mt-4 text-center mb-7 place-content-evenly '>
-         <div className='grid items-center grid-rows-1 gap-1 pb-1 mt-4 mb-4 text-center place-content-evenly '>
-        <a className="flex items-center gap-4 p-2 text-xl font-bold text-center bg-white rounded-sm ring-1 ring-white text-zinc-800 font-sfprodisplaybold ">
-          <span className='text-xl text-black thefirst dark:hover:text-opacity-75'> Book Your Free Demo
-          </span><p className='text-black dark:hover:text-opacity-75'><HiChartSquareBar className='dark:hover:text-opacity-75' color='black' size={25} /></p></a>
-        </div>
-        
+     
         <h1 className='flex items-center mb-6 text-xl tracking-widest text-center text-gray-300 thefirst place-content-evenly indent-1 tx font-sfprodisplaylight'>
             An experience youd expect from a professional tool. </h1>
         </div>
