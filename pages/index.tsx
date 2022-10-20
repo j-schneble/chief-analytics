@@ -1,5 +1,5 @@
-import Container from '../components/Container/index'
 import type { NextPage } from 'next'
+import Container from '../components/Container/index'
 import NextLink from 'next/link'
 import Image from 'next/image'
 import useInView from 'react-cool-inview'
