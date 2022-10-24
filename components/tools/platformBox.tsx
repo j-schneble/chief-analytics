@@ -57,6 +57,11 @@ export const PlatformBox: Platforms[] = [
         url: "https://primeservicespa.com",
     },
     {
+        name: '☑  Custom Platforms',
+        icon: <  BsCheckSquareFill/>,
+        url: "https://primeservicespa.com",
+    },
+    {
         name: '☑  Google My Business ',
         icon: <  BsCheckSquareFill/>,
         url: "https://primeservicespa.com",
@@ -67,10 +72,11 @@ export const PlatformBox: Platforms[] = [
         url: "https://primeservicespa.com",
     },
     {
-        name: '☑  Custom Platforms on Request',
+        name: '☑ Complete compatibility',
         icon: <  BsCheckSquareFill/>,
         url: "https://primeservicespa.com",
     },
+ 
     
 ]
 

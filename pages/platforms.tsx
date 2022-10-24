@@ -14,10 +14,10 @@ const Tools = () => {
                    
                    </div>
                    <div
-                   className='rounded-sm '
+                   className='rounded '
                   >
-   <div className=''>
-            <div className='text-left  whitespace-nowrap'>
+   <div className='flex items-center text-center '>
+            <div className='grid w-full grid-cols-3 gap-6 whitespace-nowrap mobexp'>
                     {/* Lazy */}
           {PlatformBox.sort((a, b) => {
             if (a.name < b.name) {
@@ -28,8 +28,7 @@ const Tools = () => {
             }
             return 0
           }).map(platforms => (
-            <Platforms
-           
+            <Platforms          
             key={platforms.name}
             name={platforms.name}            
             url={platforms.url}

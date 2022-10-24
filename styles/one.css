@@ -425,7 +425,7 @@ background: linear-gradient(to bottom, #2b2a2a, #000000); /* W3C, IE 10+/ Edge, 
   @media screen and (max-width: 700px) {
     .contmobgroup {
       align-items: center;
-      gap: 6;
+      gap: 1;
       padding: 2px;
       margin-left: 10px;  
     }
@@ -939,7 +939,10 @@ font-weight: 800;
 
 @media screen and (max-width: 700px) {
 .take {
-  font-size: 0.9rem;
+  font-size: 0.87rem;
+  text-align: left;
+  letter-spacing: 0.05em;
+  width: 100%;
 }
 
 }
@@ -957,7 +960,10 @@ font-weight: 800;
   }
   @media screen and (max-width: 700px) {
     .thefirst {
-      font-size: 1.0rem;
+      font-size: 1.10rem;
+      text-align: center;
+      width: 100%;
+      
     }
     
     }
@@ -1008,4 +1014,73 @@ font-weight: 800;
               
               }
 
+              @media screen and (max-width: 700px) {
+                .picpad{
+                  margin-top: 0.755rem;
+                 
+                }
+                
+                }
+          
+                @media screen and (max-width: 700px) {
+                  .expmob{
+                    grid-template-columns: repeat(1, minmax(0, 1fr));
+                    background-color: rgba(17, 17, 18, 0.3);
+                    gap: 0.25rem;
+                    display: grid;
+                    width: 100%;
+                    margin-top: 0.75rem;
+                   
+                  }
+                  
+                  }
+                  .expmob2 {
+                    background-color: rgba(17, 17, 18, 0.3);
+                    gap: 1.5rem;
+                    padding: 0.2rem;
+                    display: grid;
+                    width: 100%;
+                    margin-top: 0.75rem;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                  }
 
+                  @media screen and (max-width: 700px) {
+                    .mobexp{
+                 
+                      background-color: rgba(17, 17, 18, 0.3);
+                      gap: 1.5rem;
+                      padding: 0.2rem;
+                      display: grid;
+                      width: 100%;
+                      margin-top: 0.75rem;
+                      grid-template-columns: repeat(2, minmax(0, 1fr));
+                     
+                    }
+                    
+                    }
+
+.btwi {
+  font-size: 1.545rem/* 30px */;
+  
+    line-height: 2rem
+}
+.monitor {
+  font-size: 1.14rem/* 18px */;
+    line-height: 1.50rem
+}
+
+.arbt {
+  font-size: 0.905rem/* 14px */;
+    line-height: 1.25rem
+}
+
+.apic {
+  width: 44vh;
+
+
+  
+}
+.apic2 {
+  padding-top: 0.15rem;
+}
+               
