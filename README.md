@@ -2,7 +2,8 @@
 ## Playing with Rebranding / new site for getChiefAnalytics
 
 
-<img width="1663" alt="Screen Shot 2022-10-07 at 11 16 10 PM" src="https://user-images.githubusercontent.com/60337134/194685472-d7f33a76-8616-4c66-a663-62a650cfccda.png">
+
+<img width="1664" alt="Screen Shot 2022-10-24 at 1 09 42 AM" src="https://user-images.githubusercontent.com/60337134/197452546-9aa9cc34-765c-40c1-a582-a05fa68651a8.png">
 
 ## Current - To Do
 - Finish layout configuration 
