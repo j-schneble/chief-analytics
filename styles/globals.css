@@ -205,7 +205,7 @@
       @apply   bg-gray-100/60 dark:bg-gray-1000/70;
     }
     .filter-blur {
-      backdrop-filter: saturate(110%) blur(35px);
+      backdrop-filter: saturate(110%) blur(15px);
     }
   }
   @supports not (backdrop-filter: saturate(180%) blur(25px)) {

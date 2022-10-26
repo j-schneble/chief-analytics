@@ -28,7 +28,7 @@ interface CheckmarkProps {
 
 
         <div className='flex w-full p-3 mt-3 ml-8 rounded-sm shadow-2xl filter-blur z-5'>
-        <div className='text-xl text-white rounded-full '>{icon}</div>
+        <div className='text-xl rounded-full gradico '>{icon}</div>
          
             </div>
    

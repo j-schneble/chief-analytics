@@ -16,8 +16,8 @@ const Tools = () => {
                    <div
                    className='rounded '
                   >
-   <div className='flex items-center text-center '>
-            <div className='grid w-full grid-cols-3 gap-6 whitespace-nowrap mobexp'>
+   <div className=''>
+            <div className='grid grid-cols-1 gap-1 expmob'>
                     {/* Lazy */}
           {PlatformBox.sort((a, b) => {
             if (a.name < b.name) {

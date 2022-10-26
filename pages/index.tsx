@@ -88,9 +88,9 @@ import emailjs from '@emailjs/browser';
   
      
       <Container className='' >
-        <div className=''>
+      
           <div className='grid items-center grid-rows-1 gap-1 pb-1 text-center place-content-evenly '>        
-           <h1 className='flex items-center pb-2 text-xl tracking-widest text-center take text-zinc-300 place-content-evenly indent-1 tx hov font-sfprodisplayregular'>
+           <h1 className='flex items-center pb-4 text-xl tracking-widest text-center take text-zinc-300 place-content-evenly indent-1 tx hov font-sfprodisplayregular'>
               Take control over your marketing spend  
               </h1>
            <h1 className='flex items-center text-5xl tracking-widest text-center text-white chief place-content-evenly indent-1 tx hov font-sfprodisplayregular'>
@@ -98,7 +98,7 @@ import emailjs from '@emailjs/browser';
               </h1>
         </div>
         <div className='grid items-center grid-rows-1 gap-1 pb-1 text-center place-content-evenly '>
-          <h1 className='flex items-center pt-2 pb-2 text-2xl tracking-widest text-center text-white thefirst place-content-evenly indent-1 tx hov font-sfprodisplayregular'> 
+          <h1 className='flex items-center pt-2 pb-2 text-3xl tracking-widest text-center text-white thefirst place-content-evenly indent-1 tx hov font-sfprodisplayregular'> 
                ↓  
                </h1>
         </div>
@@ -111,7 +111,8 @@ import emailjs from '@emailjs/browser';
         <Box className='mt-1 '> 
           <div className='grid items-center grid-cols-1 gap-4 p-3 text-center place-content-evenly homecallgc item-center place-items-evenly'>
           <div className="grid items-center grid-rows-1 gap-1 pb-1 mt-4 text-center place-content-evenly ">
-	<a className="flex items-center gap-4 p-2 text-xl font-bold text-center bg-white rounded-sm ring-1 ring-white text-zinc-800 font-sfprodisplaybold " href="#popup1"><span className='text-xl text-black thefirst dark:hover:text-opacity-75'> Book Your Free Demo</span><p className='text-white dark:hover:text-opacity-75'><HiChartSquareBar className='dark:hover:text-opacity-75' color='black' size={25} /></p></a>
+	<div className='rounded-sm ff1 ring-4 ring-amber-500'>
+  <a className="flex items-center gap-4 px-4 py-4 text-xl text-center rounded-sm font-sfprodisplayregular " href="#popup1"><span className='text-xl text-white txtsh thefirst dark:hover:text-opacity-75'> Book Your Free Demo</span><p className='text-white dark:hover:text-opacity-75'><HiChartSquareBar className='dark:hover:text-opacity-75' color='white' size={25} /></p></a></div>
 </div>
 
 <div id="popup1" className='overlayup'>   
@@ -228,8 +229,10 @@ Schedule Your Free Demo Report Today
         
        
 
-        <div className='grid grid-cols-2 gap-12 mt-8 text-center '>  
-         <div className='relative apic'>
+        <div className='grid grid-cols-2 gap-8 mt-20 text-center '>  
+        <div className=''>
+         <div className='relative apic '>
+        
            <Image
              src="/images/blkchiefrepo.png"
              objectFit='cover'
@@ -239,93 +242,102 @@ Schedule Your Free Demo Report Today
              className='apic'
              alt='Summary image'
            />
+      
          </div>
-       
-      <div className='pl-8 '>
-      <h1 className='pt-1 font-semibold text-left whitespace-nowrap btwi thefirst font-sfprodisplayregular text-amber-500'>
+         </div>
+       <div className='pl-20 '>
+      <div className=''>
+      <h1 className='pt-2 font-semibold text-left nblur whitespace-nowrap btwi thefirst font-sfprodisplayregular text-amber-500'>
              Focused on the KPIs that matter
               </h1>
               
              
               <div className=''>
-              <h1 className='pt-1 pb-2 mt-1 tracking-wider text-left text-gray-200 monitor take font-sfprodisplayregular'> 
+              <h1 className='pt-1 pb-1 mb-4 tracking-wider text-left text-gray-200 monitor take font-sfprodisplaylight'> 
               Monitor the profitability behind your marketing efforts.   Track sales, leads, cost, and returns with a single click.
-              </h1>          
+              </h1>   
               </div>
-              <div className='grid items-center grid-cols-3 gap-8 p-2 mt-5 text-center border border-white rounded shadow-sm justify-evenly justify-items-center '>
-              <h1 className='items-center pr-8 text-xl text-center text-amber-500'>
-              → 
-                </h1>
-                <h1 className='font-bold text-gray-100 arbt whitespace-nowrap font-sfprodisplaybold'>
-                  SEE THE REPORT IN ACTION </h1>
-                  <h1 className='items-center pl-8 text-xl text-center text-amber-500'>
-                  ← 
-                </h1>
-                 
-                   </div>
+              <div className='py-2 pt-6 pb-6 mt-2 '>
+              <Tools />
+              </div>
+       
+     
             
             
       </div>
       
               </div>
-        
+              </div>
 
  
        
-      
-  <div className=''>
-  <div className='expmob'>
-          <Tools />
-          </div>
-  </div>
+
        
        
-         <div className='grid items-center grid-rows-1 gap-1 pb-1 mt-4 text-center mb-7 place-content-evenly '>
-     
-        <h1 className='flex items-center mb-6 text-xl tracking-widest text-center text-gray-300 thefirst place-content-evenly indent-1 tx font-sfprodisplaylight'>
+         <div className='h-24 mt-10 mb-10 nfx4 '>
+     <div className='grid items-center h-24 grid-rows-1 text-center justify-evenly justify-items-center nblur'>
+     <h1 className='text-xl text-gray-200 thefirst2 txtsh font-sfprodisplaylight'>
             An experience youd expect from a professional tool. </h1>
+     </div>
+       
         </div>
 
-        <h1 className='text-2xl font-semibold integrates font-sfprodisplaysemibold text-amber-500'> 
+        <h1 className='text-4xl font-semibold integrates font-sfprodisplaysemibold text-amber-500'> 
         Integrates with the platforms that drive your business
               </h1>
-        <h1 className='w-full mt-2 text-lg tracking-wider text-left text-gray-200 mobilewidth take font-sfprodisplayregular'> 
+        <h1 className='w-full mt-4 tracking-wider text-left text-gray-200 monitor take font-sfprodisplaylight mobilewidth '> 
         Our dashboard pulls real-time data from the webs most prominent platforms to deliver key metrics in one central location. Replace your weekly or monthly reports with on-demand marketing insights.
               </h1>
           
-        <div className='flex mt-4'>
-           <div className=''>
+        <div className='grid grid-cols-2 py-4 mt-10 '>
+      
+         
+
+        <div className='pt-2 '>
           <Platforms />
             </div>
-            </div>
-            <div className='grid grid-cols-2 gap-6 mt-6 '>
-              <div className='bg-white rounded'>
-                <div className='flex p-2 mt-4'>
-                  <h1 className='flex items-center ml-3 text-center text-black text-md font-sfprodisplaylight '>
+      
+
+          <div className='p-6 px-2 pt-2 bg-amber-500 apap2'>
+            <div className='grid grid-cols-2 z-2'>
+              <div className='rounded-sm bgdark apap'>
+                <div className='flex p-2 mt-3'>
+                  <h1 className='flex items-center ml-3 text-lg text-center text-amber-500 font-sfprodisplayregular '>
                     Ready to learn more ?
                   </h1>
+                  
                   </div>
-                  <div className='flex p-2 mt-3'>
+                  <div className='flex p-2 mt-8 mb-5'>
 
-                  <h1 className='flex items-center text-lg text-center text-black font-sfprodisplayregular'>
+                  <h1 className='flex items-center text-3xl font-semibold text-center text-white font-sfprodisplayregular'>
                   Wed love to show you the Chief Analytics Dashboard™ and answer any questions.
                   </h1>
                 </div>
+                <div className='grid grid-cols-1 gap-2 mb-2 place-content-evenly contmobgroup place-items-evenly'>
+<div className='flex px-6 py-4 mt-6 bgdark justify-evenly justify-items-center'>
+<div className='flex px-6 py-3 rounded ring-2 ring-white bgdark'>
+<h1 className='flex pr-2 text-lg font-semibold text-white whitespace-nowrap contmobphrase font-sfprodisplaysemibold'>
+Book Your Free Demo Report Today
+</h1>
+<Image
+                          layout='fixed'
+                         width='28px'
+                         height='31px'
+                          className='flex px-1 '
+                           
+                            src="/images/ch.png"
+                          alt='prime'
+                           
+                        />
+            </div>            
+</div>
+
+
+</div>
+
               </div>
-
-            <div className='relative mobilepad'>
-           <Image
-             src="/images/phonlog.png"
-             objectFit='cover'
-             layout='responsive'
-             width='0.625rem'
-             height='0.8rem'
-           
-             className='rounded-t-md'
-             alt='Summary image'
-           />
-        </div>
-
+</div>
+        
 
 
 
@@ -335,8 +347,9 @@ Schedule Your Free Demo Report Today
 
         
        </div>
+      
        </div>
-       
+     
 
 </Container>
 

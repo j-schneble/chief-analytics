@@ -16,8 +16,8 @@ const Checks = () => {
                    <div
                    className='rounded-sm '
                   >
-   <div className=''>
-            <div className='ml-8'>
+   <div className='flex items-center text-center '>
+            <div className='grid w-full grid-cols-3 gap-6 whitespace-nowrap mobexp'>
                     {/* Lazy */}
           {CheckmarkBox.sort((a, b) => {
             if (a.name < b.name) {
