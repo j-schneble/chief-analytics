@@ -88,36 +88,40 @@ import emailjs from '@emailjs/browser';
   
      
       <Container className='' >
-      
-          <div className='grid items-center grid-rows-1 gap-1 pb-1 text-center place-content-evenly '>        
-           <h1 className='flex items-center pb-4 text-xl tracking-widest text-center take text-zinc-300 place-content-evenly indent-1 tx hov font-sfprodisplayregular'>
-              Take control over your marketing spend  
+        
+        <div className='grid items-center grid-rows-1 gap-1 pt-10 pb-1 mt-20 text-center place-content-evenly '>        
+           <h1 className='flex items-center pb-1 text-5xl font-light tracking-widest text-center text-amber-500 take place-content-evenly indent-1 tx hov font-sfprodisplayregular'>
+              Take control over your marketing spend with
               </h1>
-           <h1 className='flex items-center text-5xl tracking-widest text-center text-white chief place-content-evenly indent-1 tx hov font-sfprodisplayregular'>
-              Chief Analytics Dashboard™ 
+              <div className='flex items-center text-center justify-evenly'>
+              <h1 className='pl-2 text-5xl font-light tracking-widest text-white font-sfprodisplayregular'>the
+           <span className='pl-2 text-5xl font-semibold tracking-widest text-white font-sfprodisplayregular'>
+               Chief Analytics Dashboard™ 
+              </span>
               </h1>
+              </div>
         </div>
         <div className='grid items-center grid-rows-1 gap-1 pb-1 text-center place-content-evenly '>
-          <h1 className='flex items-center pt-2 pb-2 text-3xl tracking-widest text-center text-white thefirst place-content-evenly indent-1 tx hov font-sfprodisplayregular'> 
+          <h1 className='flex items-center pt-1 pb-2 text-3xl tracking-widest text-center text-white font-heavy thefirst place-content-evenly indent-1 tx hov font-sfprodisplayheavy'> 
                ↓  
                </h1>
         </div>
         <div className='grid items-center grid-rows-1 gap-1 pb-1 text-center place-content-evenly '>
-        <h1 className='flex items-center text-xl tracking-widest text-center thefirst text-zinc-400 place-content-evenly indent-1 tx hov font-sfprodisplaylight'>
+        <h1 className='flex items-center text-3xl tracking-widest text-center text-white thefirst place-content-evenly indent-1 tx hov font-sfprodisplaylight'>
             The first all-in-one KPI dashboard built for executives 
             </h1>
         </div>
 
-        <Box className='mt-1 '> 
+        <Box className='mt-1 mb-20 '> 
           <div className='grid items-center grid-cols-1 gap-4 p-3 text-center place-content-evenly homecallgc item-center place-items-evenly'>
-          <div className="grid items-center grid-rows-1 gap-1 pb-1 mt-4 text-center place-content-evenly ">
-	<div className='rounded-sm ff1 ring-4 ring-amber-500'>
+          <div className="grid items-center grid-rows-1 gap-1 pb-1 text-center place-content-evenly ">
+  <div className='rounded-sm bgdark ring-4 ring-amber-500'>
   <a className="flex items-center gap-4 px-4 py-4 text-xl text-center rounded-sm font-sfprodisplayregular " href="#popup1"><span className='text-xl text-white txtsh thefirst dark:hover:text-opacity-75'> Book Your Free Demo</span><p className='text-white dark:hover:text-opacity-75'><HiChartSquareBar className='dark:hover:text-opacity-75' color='white' size={25} /></p></a></div>
 </div>
 
 <div id="popup1" className='overlayup'>   
           
-	<div className="inset-0 z-[2] popupup bg-primary filter-blur',
+  <div className="inset-0 z-[2] popupup bg-primary filter-blur',
                 ' shadow-2xl ',
                 'ring-1 ring-black/10 ',
                 'flex flex-col overflow-auto max-h-[32vh]'">
@@ -131,10 +135,6 @@ import emailjs from '@emailjs/browser';
 Schedule Your Free Demo Report Today
 </h1>
 </div>
-
-
-
-
 
 
 <FormControl className='px-6'  >
@@ -194,7 +194,7 @@ Schedule Your Free Demo Report Today
               isLoading={isLoading}
               loadingText='Sending'                                            
               >
-                <p className='w-full font-semibold tracking-wider text-white hover:text-opacity-50 font-sfprodisplayregular'>
+                  <p className='w-full font-semibold tracking-wider text-white hover:text-opacity-50 font-sfprodisplayregular'>
                   Send Message 
                 </p>
               </Button>
@@ -203,11 +203,11 @@ Schedule Your Free Demo Report Today
          
 
 
-		<a className="closeup" href="#">&times;</a>
+    <a className="closeup" href="#">&times;</a>
     </div>
-		</div>
+    </div>
    
-	</div>
+  </div>
 </div>
                 
                 
@@ -217,47 +217,36 @@ Schedule Your Free Demo Report Today
           </div>
           
         </Box>
-
-
-
-
-
-
-
-
-
-        
-       
-
-        <div className='grid grid-cols-2 gap-8 mt-20 text-center '>  
+        <div className='grid grid-cols-2 gap-20 mt-20 text-center '> 
         <div className=''>
          <div className='relative apic '>
         
            <Image
-             src="/images/blkchiefrepo.png"
+             src="/images/chhief.png"
              objectFit='cover'
              layout='responsive'
-             width="79.375rem"
-             height="48.313rem"        
+             width="91.25rem"
+             height="60.813rem"        
              className='apic'
              alt='Summary image'
            />
       
          </div>
-         </div>
-       <div className='pl-20 '>
+         </div> 
+       
+       <div className='p-10 '>
       <div className=''>
-      <h1 className='pt-2 font-semibold text-left nblur whitespace-nowrap btwi thefirst font-sfprodisplayregular text-amber-500'>
+      <h1 className='font-semibold text-left text-white whitespace-nowrap btwi thefirst font-sfprodisplayregular'>
              Focused on the KPIs that matter
               </h1>
               
              
-              <div className=''>
-              <h1 className='pt-1 pb-1 mb-4 tracking-wider text-left text-gray-200 monitor take font-sfprodisplaylight'> 
-              Monitor the profitability behind your marketing efforts.   Track sales, leads, cost, and returns with a single click.
+            
+              <h1 className='pt-2 pb-1 mb-4 text-left text-gray-200 whitespace-pre-wrap monitor take font-sfprodisplaylight'> 
+              Monitor the profitability behind your marketing efforts. Track sales, leads, cost, and returns with a single click.
               </h1>   
-              </div>
-              <div className='py-2 pt-6 pb-6 mt-2 '>
+            
+              <div className='flex items-center pt-6 pb-6 mt-2'>
               <Tools />
               </div>
        
@@ -267,14 +256,12 @@ Schedule Your Free Demo Report Today
       </div>
       
               </div>
+          
               </div>
-
- 
-       
-
-       
-       
-         <div className='h-24 mt-10 mb-10 nfx4 '>
+              
+              
+        
+              <div className='h-24 mt-20 mb-20 bgdark nfx4 '>
      <div className='grid items-center h-24 grid-rows-1 text-center justify-evenly justify-items-center nblur'>
      <h1 className='text-xl text-gray-200 thefirst2 txtsh font-sfprodisplaylight'>
             An experience youd expect from a professional tool. </h1>
@@ -288,17 +275,32 @@ Schedule Your Free Demo Report Today
         <h1 className='w-full mt-4 tracking-wider text-left text-gray-200 monitor take font-sfprodisplaylight mobilewidth '> 
         Our dashboard pulls real-time data from the webs most prominent platforms to deliver key metrics in one central location. Replace your weekly or monthly reports with on-demand marketing insights.
               </h1>
+              
           
-        <div className='grid grid-cols-2 py-4 mt-10 '>
+        
       
          
-
-        <div className='pt-2 '>
+              <div className='grid grid-cols-2 py-4 mt-6 '>
+        <div className='mt-10 '>
           <Platforms />
             </div>
-      
-
-          <div className='p-6 px-2 pt-2 bg-amber-500 apap2'>
+            <div className='relative alticsde '>
+        
+        <Image
+          src="/images/inpic.png"
+          objectFit='cover'
+          layout='responsive'
+          width="94.813"
+          height="83.75"        
+          className='apic'
+          alt='Summary image'
+        />
+   
+      </div>
+</div>
+         
+      <div className='grid items-center grid-cols-1 py-4 mt-10 text-center justify-items-center justify-evenly '>
+       <div className='p-6 px-2 pt-2 bg-amber-500 apap2'>
             <div className='grid grid-cols-2 z-2'>
               <div className='rounded-sm bgdark apap'>
                 <div className='flex p-2 mt-3'>
@@ -307,31 +309,53 @@ Schedule Your Free Demo Report Today
                   </h1>
                   
                   </div>
-                  <div className='flex p-2 mt-8 mb-5'>
+                  <div className='grid grid-cols-1 p-2 mt-8 mb-5'>
 
-                  <h1 className='flex items-center text-3xl font-semibold text-center text-white font-sfprodisplayregular'>
+                  <h1 className='flex items-center text-3xl font-light text-center text-white justify-evenly justify-items-center font-sfprodisplayregular'>
                   Wed love to show you the Chief Analytics Dashboard™ and answer any questions.
                   </h1>
                 </div>
-                <div className='grid grid-cols-1 gap-2 mb-2 place-content-evenly contmobgroup place-items-evenly'>
-<div className='flex px-6 py-4 mt-6 bgdark justify-evenly justify-items-center'>
-<div className='flex px-6 py-3 rounded ring-2 ring-white bgdark'>
-<h1 className='flex pr-2 text-lg font-semibold text-white whitespace-nowrap contmobphrase font-sfprodisplaysemibold'>
-Book Your Free Demo Report Today
+                <Box className='mt-10'>
+                  <FormControl >
+                    <div className='grid grid-cols-1 gap-2'>
+
+               
+                  <Box>
+                <FormLabel className='mt-4 mb-1 ml-1 text-lg font-medium text-white font-sfprodisplayregular'  key={'email'}></FormLabel>
+                  <Input 
+                    className='w-3/12 py-3 pl-2 text-white rounded-sm shadow-xs bg-zinc-800 ring-1 ring-gray-800'
+                    id='email'
+                    type={'email'}
+                    value={email}
+                  
+                    placeholder='Email Address'
+                    onChange={event => setEmail(event.currentTarget.value)}            
+                  />
+              </Box>
+              </div>
+                  </FormControl>
+                </Box>
+                
+                <div className='grid grid-cols-1 gap-2 mt-4 mb-2 place-content-evenly contmobgroup place-items-evenly'>
+<div className='flex px-6 py-2 mt-6 bgdark justify-evenly justify-items-center'>
+<div className='flex px-3 bg-white rounded-sm ring-1 ring-gray-900 start'>
+<h1 className='flex items-center pr-2 text-lg font-semibold text-center text-black nblur justify-items-center justify-evenly whitespace-nowrap contmobphrase font-sfprodisplaysemibold'>
+LETS GET STARTED
 </h1>
+
 <Image
                           layout='fixed'
-                         width='28px'
-                         height='31px'
+                         width='40.938rem'
+                         height='44.688rem'
                           className='flex px-1 '
                            
-                            src="/images/ch.png"
+                            src="/images/cd.png"
                           alt='prime'
                            
                         />
+                   
             </div>            
 </div>
-
 
 </div>
 
@@ -349,7 +373,7 @@ Book Your Free Demo Report Today
        </div>
       
        </div>
-     
+  
 
 </Container>
 
@@ -358,3 +382,4 @@ Book Your Free Demo Report Today
   }
   
   export default Home
+

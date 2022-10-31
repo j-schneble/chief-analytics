@@ -46,33 +46,33 @@ interface Checkmark {
 
 export const PlatformBox: Platforms[] = [
     {
-        name: '  Google Analytics',
+        name: ' ✓ Google Analytics',
         icon: <  BsCheckSquareFill/>,
         url: "https://primeservicespa.com",
     },
 
     {
-        name : '  Google Ads',
+        name : ' ✓ Google Ads',
         icon: <  BsCheckSquareFill/>,
         url: "https://primeservicespa.com",
     },
     {
-        name: '  Custom Platforms',
+        name: ' ✓ Custom Platforms',
         icon: <  BsCheckSquareFill/>,
         url: "https://primeservicespa.com",
     },
     {
-        name: '  Google My Business ',
+        name: ' ✓ Google My Business ',
         icon: <  BsCheckSquareFill/>,
         url: "https://primeservicespa.com",
     },
     {
-        name: '  Facebook Ads ',
+        name: ' ✓ Facebook Ads ',
         icon: <  BsCheckSquareFill/>,
         url: "https://primeservicespa.com",
     },
     {
-        name: ' Complete compatibility',
+        name: ' ✓ Complete compatibility',
         icon: <  BsCheckSquareFill/>,
         url: "https://primeservicespa.com",
     },

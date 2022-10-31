@@ -95,13 +95,12 @@ export default function Container({
           leaveFrom='opacity-100 scale-100'
           leaveTo='opacity-0 scale-95'
         >
-          <nav className='sticky w-full  bg-stickyy dark:bg-stickyy  z-[1] top-2 md:top-4 max-w-2xl px-4 rounded-md mx-auto flex justify-between items-center'>
+           <nav className='sticky w-full  bg-stickyy dark:bg-stickyy  z-[1] top-2 md:top-4 max-w-7xl px-4 rounded-md mx-auto flex justify-between items-center'>
             <button
               className='text-2xl button-primary-y '
               onClick={() => setIsOpen(!isOpen)}
             >
-              
-              <Image
+                <Image
                           layout='fixed'
                          width='48px'
                          height='51px'
@@ -111,6 +110,10 @@ export default function Container({
                           alt='prime'
                            
                         />
+              <div className='grid items-center grid-rows-1 gap-1 px-2 pt-3 text-center place-content-evenly'>
+              <h1 className='text-3xl font-semibold tracking-wider text-white font-sfprodisplayregular'>CHIEF ANALYTICS</h1>
+              <h1 className='pr-1 text-xs font-light tracking-widest text-gray-200 font-sfprodisplaylight'>BUSINESS INTELLIGENCE FOR EXECUTIVES</h1>
+              </div>
             </button>
             {projectsNav && (
               <div className='flex flex-row gap-1 text-tertiary'>
@@ -156,7 +159,7 @@ export default function Container({
             <main
               className={cn(
                 ' mt-11',
-                'max-w-6xl',
+                'max-w-7xl',
                 'mx-auto my-auto',
                 'flex flex-col justify-center gap-12',
                 'divide-y divide-gray-300 dark:divide-gray-700',

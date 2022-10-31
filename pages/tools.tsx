@@ -10,7 +10,7 @@ const Tools = () => {
    <div>
        
    <div className=''>
-            <div className='grid grid-cols-1 gap-4 expmob '>
+            <div className='grid grid-cols-1 gap-8 expmob '>
                     {/* Lazy */}
           {ToolBox.sort((a, b) => {
             if (a.name < b.name) {

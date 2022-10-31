@@ -28,11 +28,11 @@ interface ServiceProps {
          
             
           
-         <div className='flex items-center text-center border-black shadow-2xl border-r-1 justify-items-center justify-evenly ring-1 ring-black/10 filter-blur z-5'>
+         <div className='flex items-center text-center border-black shadow-2xl border-r-1 justify-items-center justify-evenly ring-1 ring-black/10 nf1 filter-blur z-5'>
 
-          <div className='p-2 text-xl rounded-full text-amber-500 nf'>{icon}</div>
+          <div className='p-2 text-xl rounded-full text-amber-500 nf2x1'>{icon}</div>
 
-          <h2 className='items-center px-1 pl-3 text-center text-white font-regular gradient-name font-sfprodisplayregular '>{name}</h2>
+          <h2 className='items-center px-2 pl-3 text-lg font-medium text-center text-gray-200 font-sfprodisplayregular '>{name}</h2>
           </div>
        
    

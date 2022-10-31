@@ -819,6 +819,10 @@ overflow: hidden;
   color: white;
   text-shadow: 0 0 0.5em black;
 }
+.in {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 0.2em rgb(54, 54, 54);
+}
 
 .gradient-colorbox {
   width: 1em;
@@ -1124,7 +1128,7 @@ grid-template-columns: repeat(2, minmax(0, 1fr));
 }                                  
 }              
 .btwi {
-font-size: 2.105rem/* 30px */;                                    
+font-size: 2.505rem/* 30px */;                                    
 line-height: 2.7rem
 }
 .monitor {
@@ -1136,18 +1140,24 @@ font-size: 0.905rem/* 14px */;
 line-height: 1.25rem
 }                                  
 .apic {
-width: 70.0vh;
+width: 75vh;
 }
+.alticsde {
+  width: 50vh;
+}
+.apicc {
+  width: 82.0vh;
+  }
 .ap2 {
 width: 51.5vh;
 height: 50vh;                                  
 }
 .apap {
-width: 50.5vh;
+width: 130.5vh;
 height: 45.5vh;
 }
 .apap2 {
-width: 52.5vh;
+width: 132.5vh;
 height: 47.5vh;
 }
 .apic2 {
@@ -1164,14 +1174,29 @@ width: 50vh;
 width: 53vh;
 }
 .apam {
-width: 53.650vh;
+width: 33.650vh;
  }
  .nf {
   user-select:none;
 
   
+ 
+  background-color: rgba(190, 190, 190, 0.643);
+  border: 1px solid rgba(0,0,0,0.2);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+  overflow: hidden;
+ 
+ }
+ .nfff {
+  user-select:none;
+
+  
   transform: translatex(2%);
-  background-color: rgba(250, 249, 249, 0.463);
+  background-color: rgba(43, 43, 43, 0.463);
   border: 1px solid rgba(0,0,0,0.2);
   -webkit-backdrop-filter: blur(10px);
   -moz-backdrop-filter: blur(10px);
@@ -1231,6 +1256,21 @@ width: 53.650vh;
   overflow: hidden;
   transition: .5s all;
  }
+ .nf2x1 {
+  user-select:none;
+
+  
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(47, 46, 46, 0.899) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: .3rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: .5s all;
+ }
  .nf1 {
   user-select:none;
 
@@ -1246,6 +1286,22 @@ width: 53.650vh;
   overflow: hidden;
   transition: .5s all;
  }
+
+.nf1notr {
+ user-select:none;
+
+ 
+
+ background-color: rgba(0,0,0,0.4);
+ border: 2px solid rgba(0,0,0,0.5);
+ -webkit-backdrop-filter: blur(10px);
+ -moz-backdrop-filter: blur(10px);
+ -ms-backdrop-filter: blur(10px);
+ backdrop-filter: blur(10px);
+ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+ overflow: hidden;
+
+}
  .nf2 {
   user-select:none;
 
@@ -1274,9 +1330,16 @@ width: 53.650vh;
  .ffnf {
 
   box-shadow: 0 3px 10px 5px #00000088;
-  background: #BA8B02;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, hsla(41, 99%, 34%, 0.805), #ea9606);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, hsla(41, 99%, 34%, 0.805), #ea9606); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, hsla(0, 0%, 0%, 0.805), #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, hsla(0, 0%, 0%, 0.805), #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
+ .ffnf2 {
+
+  box-shadow: 0 3px 10px 5px #00000088;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 
  }
  .ff1 {
@@ -1353,6 +1416,10 @@ background: linear-gradient(to top, hsla(41, 99%, 34%, 0.805), #ea9606); /* W3C,
         left: 0;
         z-index: -1;
       }
+      .start {
+        padding-top: 0.19rem/* 4px */;
+        padding-bottom: 0.15rem/* 4px */;
+      }
       .nft-cnt3 {
         content: "";
          position: absolute;
@@ -1366,6 +1433,9 @@ background: linear-gradient(to top, hsla(41, 99%, 34%, 0.805), #ea9606); /* W3C,
         top: 0;
         left: 0;
         z-index: -2;
+      }
+      .na {
+        color: #06D85F;
       }
                                  
                                   
