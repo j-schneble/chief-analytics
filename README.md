@@ -1,9 +1,7 @@
 # Chief Analytics 
 ## Playing with Rebranding / new site for getChiefAnalytics
+<img width="1662" alt="Screen Shot 2022-10-31 at 1 49 12 AM" src="https://user-images.githubusercontent.com/60337134/198940264-e77e41c4-d3e5-47ef-b84b-01a796d1931b.png">
 
-
-
-<img width="1664" alt="Screen Shot 2022-10-24 at 1 09 42 AM" src="https://user-images.githubusercontent.com/60337134/197452546-9aa9cc34-765c-40c1-a582-a05fa68651a8.png">
 
 ## Current - To Do
 - Finish layout configuration 
