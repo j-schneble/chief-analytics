@@ -95,7 +95,7 @@ export default function Container({
           leaveFrom='opacity-100 scale-100'
           leaveTo='opacity-0 scale-95'
         >
-           <nav className='sticky w-full  bg-stickyy dark:bg-stickyy  z-[1] top-2 md:top-4 max-w-7xl px-4 rounded-md mx-auto flex justify-between items-center'>
+           <nav className='sticky w-full py-8 bg-stickyy dark:bg-stickyy  z-[1] top-2 md:top-4 max-w-8xl px-4 rounded-md mx-auto flex justify-between items-center'>
             <button
               className='text-2xl button-primary-y '
               onClick={() => setIsOpen(!isOpen)}
@@ -123,15 +123,15 @@ export default function Container({
                   </a>
                 </Link>
                 <span></span>
-                <Link href='/contact'>
+                <Link href='/focus'>
                   <a className='transition-all cursor-pointer hover:text-primary'>
-                    Contact
+                    Focused
                   </a>
                 </Link>
                 <span>/</span>
-                <Link href='/gallery'>
+                <Link href='/integration'>
                   <a className='transition-all cursor-pointer hover:text-primary'>
-                    Gallery
+                    Integration
                   </a>
                 </Link>
                 <span>/</span>

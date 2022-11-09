@@ -17,9 +17,9 @@ export type Action = {
       section: 'Navigation',
     },
     {
-      name: 'Gallery ',
-      keywords: 'gallery',
-      href: '/gallery',
+      name: 'Focus ',
+      keywords: 'focus',
+      href: '/focus',
       section: 'Navigation',
     },
     {

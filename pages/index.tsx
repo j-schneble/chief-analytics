@@ -23,7 +23,7 @@ import { FiMessageCircle } from 'react-icons/fi'
    import { MdOutlineContactPage } from 'react-icons/md'
    import { init } from '@emailjs/browser';
 import emailjs from '@emailjs/browser';
-
+import Focus from './focus';
   const Home: NextPage = () => {
     const { observe, inView } = useInView({
       unobserveOnEnter: true,
@@ -87,13 +87,14 @@ import emailjs from '@emailjs/browser';
       
   
      
-      <Container className='' >
+      <Container className='bg-gray-100' >
+      
         
-        <div className='grid items-center grid-rows-1 gap-1 pt-10 pb-1 mt-20 text-center place-content-evenly '>        
+        <div className='grid items-center grid-rows-1 gap-1 pt-10 pb-1 mt-16 text-center place-content-evenly '>        
            <h1 className='flex items-center pb-1 text-5xl font-light tracking-widest text-center text-amber-500 take place-content-evenly indent-1 tx hov font-sfprodisplayregular'>
               Take control over your marketing spend with
               </h1>
-              <div className='flex items-center text-center justify-evenly'>
+              <div className='flex items-center pt-2 text-center justify-evenly'>
               <h1 className='pl-2 text-5xl font-light tracking-widest text-white font-sfprodisplayregular'>the
            <span className='pl-2 text-5xl font-semibold tracking-widest text-white font-sfprodisplayregular'>
                Chief Analytics Dashboard™ 
@@ -112,7 +113,7 @@ import emailjs from '@emailjs/browser';
             </h1>
         </div>
 
-        <Box className='mt-1 mb-20 '> 
+        <Box className='mt-3 mb-16 '> 
           <div className='grid items-center grid-cols-1 gap-4 p-3 text-center place-content-evenly homecallgc item-center place-items-evenly'>
           <div className="grid items-center grid-rows-1 gap-1 pb-1 text-center place-content-evenly ">
   <div className='rounded-sm bgdark ring-4 ring-amber-500'>
@@ -261,10 +262,10 @@ Schedule Your Free Demo Report Today
               
               
         
-              <div className='h-24 mt-20 mb-20 bgdark nfx4 '>
+              <div className='w-full h-24 mt-20 mb-20 '>
      <div className='grid items-center h-24 grid-rows-1 text-center justify-evenly justify-items-center nblur'>
      <h1 className='text-xl text-gray-200 thefirst2 txtsh font-sfprodisplaylight'>
-            An experience youd expect from a professional tool. </h1>
+            An experience you would expect from a professional tool. </h1>
      </div>
        
         </div>
@@ -273,7 +274,7 @@ Schedule Your Free Demo Report Today
         Integrates with the platforms that drive your business
               </h1>
         <h1 className='w-full mt-4 tracking-wider text-left text-gray-200 monitor take font-sfprodisplaylight mobilewidth '> 
-        Our dashboard pulls real-time data from the webs most prominent platforms to deliver key metrics in one central location. Replace your weekly or monthly reports with on-demand marketing insights.
+        Our dashboard pulls real-time data from the most prominent platforms on the web to deliver key metrics in one central location. Replace your weekly or monthly reports with on-demand marketing insights.
               </h1>
               
           
@@ -305,14 +306,14 @@ Schedule Your Free Demo Report Today
               <div className='rounded-sm bgdark apap'>
                 <div className='flex p-2 mt-3'>
                   <h1 className='flex items-center ml-3 text-lg text-center text-amber-500 font-sfprodisplayregular '>
-                    Ready to learn more ?
+                    Ready to learn more?
                   </h1>
                   
                   </div>
                   <div className='grid grid-cols-1 p-2 mt-8 mb-5'>
 
                   <h1 className='flex items-center text-3xl font-light text-center text-white justify-evenly justify-items-center font-sfprodisplayregular'>
-                  Wed love to show you the Chief Analytics Dashboard™ and answer any questions.
+                  We would love to show you the Chief Analytics Dashboard™ and answer any of your questions.
                   </h1>
                 </div>
                 <Box className='mt-10'>

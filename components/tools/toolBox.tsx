@@ -58,7 +58,7 @@ export const ToolBox: Tool[] = [
         url: "https://primeservicespa.com",
     },
     {
-        name: 'Data range, User type, & Data Filters ',
+        name: 'Data range, User type, & Data filters ',
         icon: < FaUsersCog />,
         url: "https://primeservicespa.com",
     },
