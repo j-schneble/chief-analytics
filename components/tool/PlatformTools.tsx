@@ -31,10 +31,10 @@ interface PlatformProps {
           rel='noopener noreferrer'
         >
    
-              <div className='grid grid-cols-1 ml-16 rounded-sm apam bg-zinc-100/90'>
+              <div className='grid grid-cols-1 ml-16 rounded-sm shadow-md apam bg-zinc-100/95'>
              
 
-<div className='flex px-2 py-2 pt-3 text-lg font-semibold text-black font-sfprodisplayregular whitespace-nowrap'>{name}</div>
+<div className='flex px-2 py-2 pt-3 text-xl font-semibold txtdarkbg font-sfprodisplayregular whitespace-nowrap'>{name}</div>
       </div>
      
      

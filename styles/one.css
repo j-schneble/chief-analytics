@@ -260,13 +260,13 @@ div[data-rehype-pretty-code-title] {
 
 @media screen and (max-width: 600px) {
   .tx {
-    font-size: 70px;
+    font-size: 1.9rem;
 
   }
 }
 @media screen and (max-width: 600px) {
   .txsmall {
-    font-size: 55px;
+    font-size: 1.725rem;
 
   }
 }
@@ -936,6 +936,9 @@ background-color: #121212;
 background-color:hsl(0, 0%, 0%);
 
 }
+.txtdarkbg {
+  color: hsl(0, 0%, 0%);
+}
 
 .darkpurp {
 background-color: rgb(19, 19, 21);
@@ -943,7 +946,7 @@ background-color: rgb(19, 19, 21);
 
 @media screen and (max-width: 700px) {
 .take {
-font-size: 0.9rem;
+font-size: 1.19rem;
 }
 
 }
@@ -1128,19 +1131,19 @@ grid-template-columns: repeat(2, minmax(0, 1fr));
 }                                  
 }              
 .btwi {
-font-size: 2.505rem/* 30px */;                                    
+font-size: 2.255rem/* 30px */;                                    
 line-height: 2.7rem
 }
 .monitor {
-font-size: 1.31rem/* 18px */;
-line-height: 1.89rem
+font-size: 1.41rem/* 18px */;
+line-height: 2.19rem
 }                                  
 .arbt {
 font-size: 0.905rem/* 14px */;
 line-height: 1.25rem
 }                                  
 .apic {
-width: 75vh;
+width: 85vh;
 }
 .alticsde {
   width: 50vh;
@@ -1226,6 +1229,11 @@ width: 33.650vh;
  }
  .txteff {
   transform: translatex(-10%);
+ }
+ .imback {
+  background-image: url("/images/color-bleed.png");
+ 
+ 
  }
  .nfx3 {
   user-select:none;

@@ -111,8 +111,8 @@ export default function Container({
                            
                         />
               <div className='grid items-center grid-rows-1 gap-1 px-2 pt-3 text-center place-content-evenly'>
-              <h1 className='text-3xl font-semibold tracking-wider text-white font-sfprodisplayregular'>CHIEF ANALYTICS</h1>
-              <h1 className='pr-1 text-xs font-light tracking-widest text-gray-200 font-sfprodisplaylight'>BUSINESS INTELLIGENCE FOR EXECUTIVES</h1>
+              <h1 className='text-3xl font-semibold tracking-widest text-white font-sfprodisplayregular'>CHIEF ANALYTICS</h1>
+              <h1 className='pr-1 text-sm font-light tracking-wider text-gray-200 font-sfprodisplaylight'>BUSINESS INTELLIGENCE FOR EXECUTIVES</h1>
               </div>
             </button>
             {projectsNav && (

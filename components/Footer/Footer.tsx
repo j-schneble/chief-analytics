@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center flex-grow space-x-3 text-center">
               
             <a
-                  href='https://www.instagram.com/primeservicespa/'
+                  href='https://www.instagram.com/getchiefanalytics/'
                   className='visible lit2'
                   target='_blank'
                   rel='noreferrer'
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                   <RiInstagramLine className='items-center w-8 h-auto p-2 text-center transition-all duration-200 rounded-md fill-current dark:bg-zinc-800 text-white/95 dark:text-white/95 dark:hover:text-orange-600 dark:hover-bg-opacity-75' />
                 </a>
                 <a
-                  href='https://www.facebook.com/primeservicespa/'
+                  href='"https://getchiefanalytics.com",'
                   className='visible lit2'
                   target='_blank'
                   rel='noreferrer'

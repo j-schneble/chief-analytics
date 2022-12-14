@@ -49,18 +49,18 @@ export const ToolBox: Tool[] = [
     {
         name: 'Dynamic comparison arrows',
         icon : < MdDynamicFeed />,
-        url: "https://primeservicespa.com",
+        url: "https://getchiefanalytics.com/",
     },
 
     {
         name : 'Customized for your business',
         icon: <FaUserCheck />,
-        url: "https://primeservicespa.com",
+        url: "https://getchiefanalytics.com/",
     },
     {
         name: 'Data range, User type, & Data filters ',
         icon: < FaUsersCog />,
-        url: "https://primeservicespa.com",
+        url: "https://getchiefanalytics.com/",
     },
     
 ]

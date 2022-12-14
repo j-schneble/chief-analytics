@@ -22,6 +22,9 @@ import { FiMessageCircle } from 'react-icons/fi'
    import {HiChartSquareBar} from 'react-icons/hi'
    import { MdOutlineContactPage } from 'react-icons/md'
    import { init } from '@emailjs/browser';
+   import { signIn } from 'next-auth/react';
+
+   
 import emailjs from '@emailjs/browser';
 import Focus from './focus';
   const Home: NextPage = () => {
@@ -87,16 +90,16 @@ import Focus from './focus';
       
   
      
-      <Container className='bg-gray-100' >
+      <Container className='' >
       
         
         <div className='grid items-center grid-rows-1 gap-1 pt-10 pb-1 mt-16 text-center place-content-evenly '>        
-           <h1 className='flex items-center pb-1 text-5xl font-light tracking-widest text-center text-amber-500 take place-content-evenly indent-1 tx hov font-sfprodisplayregular'>
+           <h1 className='flex items-center pb-1 font-light tracking-tight text-center text-7xl text-amber-500 take place-content-evenly indent-1 font-sfprodisplayregular'>
               Take control over your marketing spend with
               </h1>
               <div className='flex items-center pt-2 text-center justify-evenly'>
-              <h1 className='pl-2 text-5xl font-light tracking-widest text-white font-sfprodisplayregular'>the
-           <span className='pl-2 text-5xl font-semibold tracking-widest text-white font-sfprodisplayregular'>
+              <h1 className='pl-2 font-light tracking-wide text-white text-7xl font-sfprodisplayregular'>the
+           <span className='pl-2 font-semibold tracking-wide text-white text-7xl font-sfprodisplayregular'>
                Chief Analytics Dashboard™ 
               </span>
               </h1>
@@ -108,7 +111,7 @@ import Focus from './focus';
                </h1>
         </div>
         <div className='grid items-center grid-rows-1 gap-1 pb-1 text-center place-content-evenly '>
-        <h1 className='flex items-center text-3xl tracking-widest text-center text-white thefirst place-content-evenly indent-1 tx hov font-sfprodisplaylight'>
+        <h1 className='flex items-center text-4xl tracking-widest text-center text-white thefirst place-content-evenly indent-1 tx hov font-sfprodisplaylight'>
             The first all-in-one KPI dashboard built for executives 
             </h1>
         </div>
@@ -117,7 +120,7 @@ import Focus from './focus';
           <div className='grid items-center grid-cols-1 gap-4 p-3 text-center place-content-evenly homecallgc item-center place-items-evenly'>
           <div className="grid items-center grid-rows-1 gap-1 pb-1 text-center place-content-evenly ">
   <div className='rounded-sm bgdark ring-4 ring-amber-500'>
-  <a className="flex items-center gap-4 px-4 py-4 text-xl text-center rounded-sm font-sfprodisplayregular " href="#popup1"><span className='text-xl text-white txtsh thefirst dark:hover:text-opacity-75'> Book Your Free Demo</span><p className='text-white dark:hover:text-opacity-75'><HiChartSquareBar className='dark:hover:text-opacity-75' color='white' size={25} /></p></a></div>
+  <a className="flex items-center gap-4 px-4 py-4 text-xl text-center rounded-sm font-sfprodisplayregular " href="#popup1"><span className='text-2xl text-white txtsh thefirst dark:hover:text-opacity-75'> Book Your Free Demo</span><p className='text-white dark:hover:text-opacity-75'><HiChartSquareBar className='dark:hover:text-opacity-75' color='white' size={25} /></p></a></div>
 </div>
 
 <div id="popup1" className='overlayup'>   
@@ -218,6 +221,15 @@ Schedule Your Free Demo Report Today
           </div>
           
         </Box>
+        <div>
+        <button
+          onClick={() => {
+            signIn();
+          }}
+        >
+          Login
+        </button>
+        </div>
         <div className='grid grid-cols-2 gap-20 mt-20 text-center '> 
         <div className=''>
          <div className='relative apic '>
@@ -235,19 +247,19 @@ Schedule Your Free Demo Report Today
          </div>
          </div> 
        
-       <div className='p-10 '>
+       <div className='pt-6 pl-16 '>
       <div className=''>
-      <h1 className='font-semibold text-left text-white whitespace-nowrap btwi thefirst font-sfprodisplayregular'>
+      <h1 className='pl-20 font-semibold text-left text-amber-500 whitespace-nowrap btwi font-sfprodisplayregular'>
              Focused on the KPIs that matter
               </h1>
               
              
             
-              <h1 className='pt-2 pb-1 mb-4 text-left text-gray-200 whitespace-pre-wrap monitor take font-sfprodisplaylight'> 
+              <h1 className='pt-2 pb-1 pl-20 mb-4 text-left text-gray-200 whitespace-pre-wrap monitor take font-sfprodisplaylight'> 
               Monitor the profitability behind your marketing efforts. Track sales, leads, cost, and returns with a single click.
               </h1>   
             
-              <div className='flex items-center pt-6 pb-6 mt-2'>
+              <div className='flex items-center pt-6 pb-6 pl-20 mt-2'>
               <Tools />
               </div>
        
@@ -270,7 +282,7 @@ Schedule Your Free Demo Report Today
        
         </div>
 
-        <h1 className='text-4xl font-semibold integrates font-sfprodisplaysemibold text-amber-500'> 
+        <h1 className='font-semibold btwi integrates font-sfprodisplaysemibold text-amber-500'> 
         Integrates with the platforms that drive your business
               </h1>
         <h1 className='w-full mt-4 tracking-wider text-left text-gray-200 monitor take font-sfprodisplaylight mobilewidth '> 
