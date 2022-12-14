@@ -221,7 +221,7 @@ Schedule Your Free Demo Report Today
           </div>
           
         </Box>
-        <div>
+        {/* <div>
         <button
           onClick={() => {
             signIn();
@@ -229,7 +229,7 @@ Schedule Your Free Demo Report Today
         >
           Login
         </button>
-        </div>
+        </div> */}
         <div className='grid grid-cols-2 gap-20 mt-20 text-center '> 
         <div className=''>
          <div className='relative apic '>
